@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'head.php'
-       ?>href="css/style.css" rel="stylesheet">
-</head>
-<body>
-	<?php require 'navigator.php'
        ?>
+<body>
+<?php require 'navigator.php'
+?>
 <!-- Panels --> 
-	<div class="container">
+
+<?php 
+$mysqli = new mysqli('localhost','root','','bookingyuk');
+
+$sql = "select * from manajement_hotel where judul='Hotel Escape'";
+$result = mysqli_query($mysqli,$sql);
+while ( $row = mysqli_fetch_array($result)) {
+?>
+
+<div class="container">
     <div class="jumbotron">
-        <h1 style="text-align:center">Hotel Escape</h1><hr>
+        <h1 style="text-align:center"><?php echo $row['judul'];?></h1><hr>
         <img src="images/Escape/escape.jpg" class="img-thumbnail" alt="ESCAPE" style="float:left; margin: 50px auto; width: 100%; height: auto;" >
         <div class="menu-contact">
-	            <p>Escape Merupakan salah satu hotel di karimunjawa dengan lokasi tak jauh dari pelabuhan penyebrangan. Untuk berwisata ke lain tempat seperti penangkaran ikan hiu, alun-alun karimunjawa, bukit love, bukit lainya hanya memerlukan waktu kurang dari 10 menit. 
-					Hotel Escape memiliki 15 kamar yang dibagi menjadi 4 kamar tipe suite AC + TV + bathroom, 3 kamar deluxe AC + bathroom dan 8 kamar standard AC + bathroom.
-					Di samping Hotel tersebut terdapat resto dengan kapasitas yang luas dan taman pantai dengan lautnya yang indah. 
-	            	Hotel Escape ini letaknya di pinggiran pantai, ada yang berbeda dari hotel-hotel lainnya yaitu dengan desain kamar tidur yang dapat memandang langsung ke pantai, tak heran jika wisatawan yang menginap disini tidak akan kecewa dengan fasilitas yang diberikan.</p>
-	            <p><a target="_blank" class="btn btn-success btn-lg" style="background: #C2B6A3; color:black;">Rp.350.000</a> <a href="formulir.php" target="_blank" class="btn btn-success btn-lg">Booking Now</a></p>
+	            <p><?php echo $row['keterangan'];?><p>
         </div>
-    </div>
+</div>
+<?php
+}
+?>
 
 	<div class="panel panel-default panels-color menu-conten">
 	  	<div class="panel-body">
@@ -99,5 +106,7 @@
     <!-- memanggil file js --> 
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/scrollup.js"></script>
 </body>
 </html>

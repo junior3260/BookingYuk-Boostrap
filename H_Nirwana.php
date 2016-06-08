@@ -4,19 +4,28 @@
        ?>
 <body>
 <?php require 'navigator.php'
-       ?>
+?>
 <!-- Panels --> 
+
+<?php 
+$mysqli = new mysqli('localhost','root','','bookingyuk');
+
+$sql = "select * from manajement_hotel where judul='Hotel Nirwana'";
+$result = mysqli_query($mysqli,$sql);
+while ( $row = mysqli_fetch_array($result)) {
+?>
+
 <div class="container">
     <div class="jumbotron">
-        <h1 style="text-align:center">HOTEL NIRWANA</h1><hr>
-        <img src="images/Nirwana/f0.nirwana.jpg" class="img-thumbnail" alt="Gambar malas ngoding" style="float:left; margin: 50px auto; width: 100%; height: auto;" >
+        <h1 style="text-align:center"><?php echo $row['judul'];?></h1><hr>
+        <img src="lumino/gambar/<?php echo $row['file'];?>" class="img-thumbnail" alt="Gambar hotel nirwana" style="float:left; margin: 50px auto; width: 100%; height: auto;">
         <div class="menu-contact">
-	            <p>Nirwana laut merupakan sebuah Hotel/Resort yang pantainya sangat indah, dari kamar turun kelaut sudah merupakan snorkling dan swiming area yang mengesankan.
-	            	Nirwana Resort merupakan hotel mewah yang ada di Karimunjawa dengan memiliki 3 Type Kamar Standard Room view Garden, Suite Room view Resort ke menghadap ke timur dan Master Suite. Di pagi hari saat menanti Sunrise diufuk timur sungguh luar biasa keindahan pancaran mentari pagi menampakkan wajahnya yang cerah menyinari Pantai Nirwana Resort yang megah ini.
-	            	sungguh tempat berlibur yg akan mebawa kenangan indah, cocok untuk keluarga yg menginginkan ketenangan, perpaduan antara panorama laut, pantai pasir putih dan pegunungan. cocok pula bagi pasangan muda yang sedang honeymoon, sungguh tempat yang romantis.</p>
+	        <p><?php echo $row['keterangan'];?></p>
         </div>
     </div>
-
+<?php
+}
+?>
 	<div class="panel panel-default panels-color menu-conten">
 	  	<div class="panel-body">
 			<h1>Jenis Kamar</h1>
@@ -98,5 +107,7 @@
     <!-- memanggil file js --> 
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/scrollup.js"></script>
 </body>
 </html>

@@ -1,0 +1,215 @@
+.menu-conten{
+	margin-top: 20px;
+	margin-left: 0px;
+	font-weight: bold;
+}
+
+.menu-contact{
+	display: inline-block;
+	margin: 0 0px 0 10px;
+	font-size: 12;
+}
+.news{
+
+	background: #fff;
+}
+
+.space-hotel{
+	display: inline-block;
+	margin: 0 0px 0 5px;
+	font-size: 12;
+}
+
+.button-booking{
+	width: 100px;
+	height: 50px;
+	background: #C2B6A3; 
+	color:black;
+	font-size: 18px;
+}
+
+.nav-color{
+	background: #C2B6A3;
+}
+.nav-dropdown-inner{
+	background: #F2F2F2;
+}
+
+.panels-color{
+	background: #C2B6A3;
+	font-weight: bold;
+}
+
+
+.color-slide{
+	background: #fff;
+}
+#page_wrapper {
+    margin: 50px auto; width: 100%; height: auto;
+}
+#slider_wrap{margin: 0 auto; width: 100%; height: auto;}
+
+#image_container{
+    width: 100%; height: auto;
+}
+
+#image_container .carousel-inner .item,
+#image_container .carousel-inner .item .active{
+    width:100%;
+    height:auto;
+}
+#image_container .carousel-inner .item img {
+  min-width:100%;
+  height:447px;
+}
+
+
+/* Lewati langkah ini, jika sudah terdapat class .modal pada paket bootstrap css anda */
+.modal-open{overflow:hidden}
+.modal{display:none;overflow:hidden;position:fixed;top:60px;right:0;bottom:0;left:0;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}
+.modal.fade .modal-dialog{-webkit-transform:translate(0, -25%);-ms-transform:translate(0, -25%);-o-transform:translate(0, -25%);transform:translate(0, -25%);-webkit-transition:-webkit-transform 0.3s ease-out;-o-transition:-o-transform 0.3s ease-out;transition:transform 0.3s ease-out}
+.modal.in .modal-dialog{-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0)}
+.modal-open .modal{overflow-x:hidden;overflow-y:auto}
+.modal-dialog{position:relative;width:auto;margin:10px}
+.modal-content{position:relative;background-color:#1e1e1e;border:1px solid #131313;border:1px solid rgba(0,0,0,0.2);border-radius:6px;-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5);-webkit-background-clip:padding-box;background-clip:padding-box;outline:0}
+.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000} .modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}
+.modal-backdrop.in{opacity:.5;filter:alpha(opacity=50)}
+.modal-header{padding:15px;border-bottom:1px solid #e5e5e5;min-height:16.42857143px}
+.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.42857143}
+.modal-body{position:relative;padding:15px}
+.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}
+.modal-footer .btn+.btn{margin-left:5px;margin-bottom:0}
+.modal-footer .btn-group .btn+.btn{margin-left:-1px}
+.modal-footer .btn-block+.btn-block{margin-left:0}
+.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}
+@media (min-width:768px){
+.modal-dialog{width:500px;margin:30px auto}
+.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);box-shadow:0 5px 15px rgba(0,0,0,0.5)}
+.modal-sm{width:300px}}
+@media (min-width:992px){
+.modal-lg{width:900px}}
+
+/* untuk menghilangkan list style dan pointer pada img */
+ul {
+padding:0 0 0 0;
+margin:0 0 0 0;
+}
+ul li {
+list-style:none;
+}
+ul li img {
+cursor: pointer;
+}
+
+/* Untuk style next dan prev button */
+.controls{
+width:50px;
+display:block;
+font-size:11px;
+padding-top:8px;
+font-weight:bold; 
+}
+.next {
+float:right;
+text-align:right;
+}
+
+
+
+
+
+
+/* Styling Button Back to Top */
+.go-top {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+	background: rgba(0, 0, 0, 0.2);
+	font-size: 12px;
+	display: none;
+}
+
+.go-top:hover {
+	background: rgba(0, 0, 0, 0.5);	
+}
+
+
+//tampilan tabel
+
+
+            .post-body table th, .post-body table td, .post-body table caption{border:1px solid #d8dde1;padding:.2em .5em;text-align:left;vertical-align:top;}
+
+            .post-body table.tr-caption-container {border:1px solid #d8dde1;}
+
+            .post-body th{font-weight:700;}
+
+            .post-body table caption{border:none;font-style:italic;}
+
+            .post-body td, .post-body th{vertical-align:top;text-align:left;font-size:13px;padding:3px 5px;border:1px solid #d8dde1;}
+
+            .post-body th{background:#C78C0C;color:#fff;}
+
+            .post-body table.tr-caption-container td {border:none;padding:8px;}
+
+            .post-body table.tr-caption-container, .post-body table.tr-caption-container img, .post-body img {max-width:100%;height:auto;}
+
+            .post-body td.tr-caption {color:#666;font-size:80%;padding:0px 8px 8px !important;}
+
+            img {max-width:100%;height:auto;border:none;}
+
+            table {max-width:100%;width:100%;margin:1.5em auto;}
+
+            table.section-columns td.first.columns-cell{border-left:none}
+
+            table.section-columns{border:none;table-layout:fixed;width:100%;position:relative}
+
+            table.columns-2 td.columns-cell{width:50%}
+
+            table.columns-3 td.columns-cell{width:33.33%}
+
+            table.columns-4 td.columns-cell{width:25%}
+
+            table.section-columns td.columns-cell{vertical-align:top}
+
+            table.tr-caption-container{padding:4px;margin-bottom:.5em}
+
+            td.tr-caption{font-size:80%}
+
+.ubah{
+	text-decoration: none;
+	font-size: 80%;
+	background: orange;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: ease-out 0.2s;
+}
+.ubah:hover{
+	text-decoration: none;
+	padding: 5px 10px;
+	background: #ffea00;
+	color: #c38705;
+}
+
+.hapus{
+	text-decoration: none;
+	font-size: 80%;
+	background: blue;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: ease-out 0.2s;
+}
+.hapus:hover{
+	text-decoration: none;
+	padding: 5px 10px;
+	background: #5280FF;
+	color: #c38705;
+}
+
+#success_message{ display: none;}
